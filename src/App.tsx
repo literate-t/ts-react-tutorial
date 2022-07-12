@@ -1,17 +1,8 @@
 import React from 'react';
-import Counter from './Counter';
-import TaeForm from './TaeForm';
+import ReducerSample from './reducerSample';
 
 const App: React.FC = () => {
-  const onSubmit = (form: { name: string; desc: string }) => {
-    console.log(form);
-  };
-  return (
-    <>
-      <Counter />
-      <TaeForm onSubmit={onSubmit} />
-    </>
-  );
+  return <ReducerSample />;
 };
 
 export default App;
